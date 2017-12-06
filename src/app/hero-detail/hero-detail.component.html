@@ -1,0 +1,12 @@
+
+<div *ngIf = "selectedHero">
+    <h2>
+        {{selectedHero.name | uppercase}} Details
+      </h2>
+    id: <span> {{selectedHero.id}} </span>
+    <div>
+      <label>
+        Name: <input [(ngModel)] = "selectedHero.name" >
+      </label>
+    </div>
+  </div>
