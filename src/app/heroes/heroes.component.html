@@ -3,4 +3,9 @@
 </p>
 <div><h3>{{hero.name}}</h3></div>
 <div><span>{{hero.id}}</span></div>
-<div><span>{{hero.name | uppercase}}</span></div>
+<div>
+  <label>
+    NAME:
+    <input [(ngModel)] = "hero.name" placeholder="Namee">
+  </label>
+</div>
