@@ -2,13 +2,15 @@
   Here is the heroes...
 </h2>
 <ul class="heroes">
-  <li *ngFor = "let hero of heros" 
+  <!--<li *ngFor = "let hero of heros" 
       (click) = onSelect(hero) 
       [class.selected] = "hero === selectedHero" >
     <span class="badge" style="color:blue ;">{{hero.id}}</span> 
     <span style="color:black" class="span-name">
       <label class="label-color">{{hero.name}}</label>
     </span>
-  </li>
+  </li>-->
+  
 </ul>
+{{heros | json}}
   <app-hero-detail [selectedHero]="selectedHero"></app-hero-detail>

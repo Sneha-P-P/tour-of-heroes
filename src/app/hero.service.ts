@@ -10,9 +10,9 @@ import 'rxjs/add/operator/map';
 export class HeroService {
 
   constructor(private http: Http) { }
-  getHeroes(): Observable<Hero[]> {
-    return of(heroes);
-    // return this.http.get(`https://conduit.productionready.io/api/profiles/eric`).map((res: Response) => <Hero[]>res.json());
+  getHeroes(): Observable<Object> {
+    // return of(heroes);
+    return this.http.get(`https://conduit.productionready.io/api/profiles/eric`).map((res: Response) => res.json());
   }
 
 }
